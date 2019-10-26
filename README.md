@@ -43,22 +43,21 @@ Segue o algoritmo da solução, demonstrando o funcioncionamento passo a passo
 
 6. Verifica se o caracter é do tipo open "[{" ou close "}]". Se for open, passo 7. Senão, passo 9
 
-7. Verifica se a pilha está vazia. Se estiver vazia, passo 100. Senão, passo 8
+7. Verifica se a pilha está vazia. Se estiver vazia, passo 12. Senão, passo 8
 
-8. Verifica se o caracter pertence à categoria do caracter do topo da pilha. Se pertencer, passo 102. Senão, passo 100
+8. Verifica se o caracter pertence à categoria do caracter do topo da pilha. Se pertencer, passo 14. Senão, passo 12
 
-9. Verifica se a pilha está vazia. Se estiver vazia, passo 102. Senão, passo 10
+9. Verifica se a pilha está vazia. Se estiver vazia, passo 14. Senão, passo 10
 
-10. Verifica se o caracter pertence à categoria do caracter do topo da pilha. Se pertencer, passo 11. Senão, passo 102
+10. Verifica se o caracter pertence à categoria do caracter do topo da pilha. Se pertencer, passo 11. Senão, passo 14
 
-11. Verifica se o caracter é o inverso do caracter do topo da pilha. Se for, passo 101. Senão, passo 102
+11. Verifica se o caracter é o inverso do caracter do topo da pilha. Se for, passo 13. Senão, passo 14
 
-
-100. Adiciona caracter ao topo da pilha (PUSH)
+12. Adiciona caracter ao topo da pilha (PUSH)
  
-101. Remove caracter do topo da pilha (POP)
+13. Remove caracter do topo da pilha (POP)
  
-102. Informa que o Json é inválido
+14. Informa que o Json é inválido
 
 
 ## Como executar e testar
