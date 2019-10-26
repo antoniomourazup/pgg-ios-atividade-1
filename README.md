@@ -29,7 +29,7 @@ Nesta solução foi aplicado o conceito de pilha, a qual usa as seguintes opreç
 
 ## Funcionamento
 
-Segue o algoritmo da solução, demonstrando o funcioncionamento passo a passo
+Segue o algoritmo da solução, demonstrando o funcionamento passo a passo
 
 1. Recebe a string
 
