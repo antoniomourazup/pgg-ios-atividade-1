@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Json Validator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Json Validator" id="BYZ-38-t0r" customClass="ViewController" customModule="Json_Validator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe o json" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kY3-WT-cAP">
+                                <rect key="frame" x="16" y="196" width="343" height="68"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyL-zh-hdH">
+                                <rect key="frame" x="41" y="691" width="293" height="54"/>
+                                <color key="backgroundColor" red="0.92939778776366477" green="0.76887374180106294" blue="0.25552540468116902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="X0q-SX-sh4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Validar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="validarBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yhl-5X-lbE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.068179499487374243" green="0.37511562278917865" blue="0.61303837435233155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kY3-WT-cAP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1p3-D2-Qwn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NyL-zh-hdH" secondAttribute="bottom" constant="33" id="499-OY-XfS"/>
+                            <constraint firstItem="kY3-WT-cAP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="152" id="6hD-dd-BHl"/>
+                            <constraint firstItem="NyL-zh-hdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="FGb-rJ-ved"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NyL-zh-hdH" secondAttribute="trailing" constant="25" id="JdB-eB-tJJ"/>
+                            <constraint firstItem="kY3-WT-cAP" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="NyL-zh-hdH" secondAttribute="centerX" id="QyJ-Ii-LbS"/>
+                            <constraint firstItem="NyL-zh-hdH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="Ykt-ik-R3g"/>
+                            <constraint firstItem="NyL-zh-hdH" firstAttribute="top" relation="lessThanOrEqual" secondItem="kY3-WT-cAP" secondAttribute="bottom" constant="427" id="Z0W-yq-BxR"/>
+                            <constraint firstItem="kY3-WT-cAP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gmW-lS-8Sj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="jsonTextFiel" destination="kY3-WT-cAP" id="JW0-Zp-VEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.31034482758622"/>
+        </scene>
+    </scenes>
+</document>
