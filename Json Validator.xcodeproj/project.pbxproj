@@ -14,9 +14,8 @@
 		421512C82365E13D005CE20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421512C72365E13D005CE20B /* Assets.xcassets */; };
 		421512CB2365E13D005CE20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421512C92365E13D005CE20B /* LaunchScreen.storyboard */; };
 		421512D62365E13D005CE20B /* Json_ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421512D52365E13D005CE20B /* Json_ValidatorTests.swift */; };
-		429D162F23674E99008DC407 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D162E23674E99008DC407 /* JsonData.swift */; };
-		429D1631236755AE008DC407 /* ProcessJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D1630236755AE008DC407 /* ProcessJson.swift */; };
-		42D81AAF23678F2E00FAE1E4 /* logo_zup.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D81AAE23678F2E00FAE1E4 /* logo_zup.png */; };
+		426AA25C237098E800C26A0B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AA25B237098E800C26A0B /* Stack.swift */; };
+		426AA25E2370B33200C26A0B /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426AA25D2370B33200C26A0B /* Validate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +40,8 @@
 		421512D12365E13D005CE20B /* Json ValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Json ValidatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		421512D52365E13D005CE20B /* Json_ValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json_ValidatorTests.swift; sourceTree = "<group>"; };
 		421512D72365E13D005CE20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		429D162E23674E99008DC407 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
-		429D1630236755AE008DC407 /* ProcessJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessJson.swift; sourceTree = "<group>"; };
-		42D81AAE23678F2E00FAE1E4 /* logo_zup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_zup.png; path = ../../../../Downloads/logo_zup.png; sourceTree = "<group>"; };
+		426AA25B237098E800C26A0B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		426AA25D2370B33200C26A0B /* Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				421512C02365E13C005CE20B /* SceneDelegate.swift */,
 				421512C72365E13D005CE20B /* Assets.xcassets */,
 				421512C92365E13D005CE20B /* LaunchScreen.storyboard */,
-				42D81AAE23678F2E00FAE1E4 /* logo_zup.png */,
 				421512CC2365E13D005CE20B /* Info.plist */,
 			);
 			path = "Json Validator";
@@ -108,7 +105,7 @@
 		429D162A23674DF6008DC407 /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
-				42D81AAD23678E1500FAE1E4 /* Helpers */,
+				42D81AAD23678E1500FAE1E4 /* Utils */,
 				429D162D23674E25008DC407 /* Controller */,
 				429D162C23674E1D008DC407 /* View */,
 				429D162B23674E15008DC407 /* Model */,
@@ -119,7 +116,7 @@
 		429D162B23674E15008DC407 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				429D162E23674E99008DC407 /* JsonData.swift */,
+				426AA25B237098E800C26A0B /* Stack.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,12 +137,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42D81AAD23678E1500FAE1E4 /* Helpers */ = {
+		42D81AAD23678E1500FAE1E4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				429D1630236755AE008DC407 /* ProcessJson.swift */,
+				426AA25D2370B33200C26A0B /* Validate.swift */,
 			);
-			path = Helpers;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +228,6 @@
 			files = (
 				421512CB2365E13D005CE20B /* LaunchScreen.storyboard in Resources */,
 				421512C82365E13D005CE20B /* Assets.xcassets in Resources */,
-				42D81AAF23678F2E00FAE1E4 /* logo_zup.png in Resources */,
 				421512C62365E13C005CE20B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,11 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429D1631236755AE008DC407 /* ProcessJson.swift in Sources */,
 				421512C32365E13C005CE20B /* ViewController.swift in Sources */,
 				421512BF2365E13C005CE20B /* AppDelegate.swift in Sources */,
 				421512C12365E13C005CE20B /* SceneDelegate.swift in Sources */,
-				429D162F23674E99008DC407 /* JsonData.swift in Sources */,
+				426AA25C237098E800C26A0B /* Stack.swift in Sources */,
+				426AA25E2370B33200C26A0B /* Validate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
